@@ -23,7 +23,7 @@ heading.addEventListener("click", () => {
 })
 
 
-// =============== convert nilai ===================
+// =============== convert nilai =================================================
 // 1. ambil elementnya
 // 2. kasih tombol submit event click
 // 3. buat logic untuk convert nilai
@@ -37,8 +37,6 @@ submit.addEventListener('click', (event) => {
   event.preventDefault()
   
   result.textContent = convertNilai(nilai.value)
-  
-  nilai.value = convertNilai(nilai.value)
 })
 
 function convertNilai(nilai) {
@@ -59,9 +57,7 @@ function convertNilai(nilai) {
 
 
 
-
-
-// =============== nampilin card hewan =============
+// =============== nampilin card hewan =======================================
 
 let listHewan = document.getElementById("list-hewan")
 
