@@ -1,0 +1,11 @@
+#list-hewan {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  border: 1px black solid;
+  padding: 10px;
+  background-color: antiquewhite;
+}
