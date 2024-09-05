@@ -55,7 +55,7 @@ btnAdd.addEventListener('click', (e) => {
 
 function addTodo(newTodo){
   todo.push(newTodo)
-  listTodo.innerHTML += `<li>${newTodo.task}</li>`
+  listTodo.innerHTML += `<li id="todo-${newTodo.id}" onclick="clickItem(${newTodo.id})">${newTodo.task}</li>`
   console.log(todo)
 }
 
