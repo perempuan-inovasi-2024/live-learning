@@ -1,0 +1,67 @@
+header {
+  width: 200px;
+  height: 200px;
+  background-color: aquamarine;
+}
+
+@media screen and (width < 600px) {
+  header {
+    background-color: brown;
+  }
+}
+
+/* ============================= */
+
+#profile {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+#profile img {
+  /* max-width: 100px; */
+}
+
+#profile p {
+  max-width: 400px;
+}
+
+@media screen and (width < 600px) {
+  #profile {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+/*  ====================================== */
+
+/* #hewan {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+} */
+
+#hewan {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.card {
+  width: 100px;
+  height: 150px;
+  background-color: cadetblue;
+  border: 1px solid black;
+}
+
+/* @media screen and (width < 600px){
+  #hewan {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+} */
